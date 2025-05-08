@@ -1,5 +1,4 @@
-import firebase_admin
-from firebase_admin import credentials, firestore, storage
+
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
@@ -8,13 +7,6 @@ import uuid
 
 app = FastAPI()
 
-# Initialize Firebase
-cred = credentials.Certificate("C:/Users/Assistant/ROXI/firebase key.json")
-firebase_admin.initialize_app
-cred, ({'storageBucket': 'roxiesrevampdrooms.appspot.com'})
-
-db = firestore.client()
-bucket = storage.bucket()
 
 # Pydantic models
 class User(BaseModel):
