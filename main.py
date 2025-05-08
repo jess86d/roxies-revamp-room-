@@ -9,10 +9,9 @@ import uuid
 app = FastAPI()
 
 # Initialize Firebase
-cred = credentials.Certificate("C:/Users/Assistant/ROXI/firebase key.json")
-firebase_admin.initialize_app(cred,'storageBucket': '
-roxies-revampd-rooms.appspot.com'
-})
+cred = credentials.Certificate("C:/Users/Assistant/ROXI/firebase key.json")firebase_admin.initialize_app
+cred, ({'storageBucket': 'roxiesrevampdrooms.appspot.com'})
+
 db = firestore.client()
 bucket = storage.bucket()
 
