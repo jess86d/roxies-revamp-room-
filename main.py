@@ -10,8 +10,7 @@ app = FastAPI()
 
 # Initialize Firebase
 cred = credentials.Certificate("C:/Users/Assistant/ROXI/firebase key.json")
-firebase_admin.initialize_app(cred, {
-    'storageBucket': '
+firebase_admin.initialize_app(cred,'storageBucket': '
 roxies-revampd-rooms.appspot.com'
 })
 db = firestore.client()
